@@ -1,0 +1,172 @@
+/* page/pay/index.wxss */
+@import '../../library/css/font.wxss';
+
+page {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100rpx;
+  background: #f2f2f2;
+}
+
+.header, .body, .price, .bottom {
+  width: 92%;
+  padding: 0 4%;
+  background: #fff;
+}
+
+/*header  */
+
+.title {
+  width: 100%;
+  padding: 30rpx 0;
+  color: #0d0d0d;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-bottom: 1px #e6e6e6 solid;
+}
+
+/*body  */
+
+.body {
+  margin-bottom: 20rpx;
+  padding-bottom: 30rpx;
+}
+
+.more {
+  width: 138rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4rpx;
+  color: #6c6c6c;
+}
+
+.more-text {
+  font-size: 24rpx;
+  font-weight: medium;
+  letter-spacing: 1px;
+}
+
+.more-text+text {
+  padding-left: 5rpx;
+  font-size: 20rpx;
+}
+
+.lesson-block {
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding-top: 33rpx;
+  line-height: 60rpx;
+  font-size: 27rpx;
+  overflow: hidden;
+}
+
+.lesson-block .flex-row {
+  justify-content: space-between;
+  height: 60rpx;
+  color: #999;
+}
+
+.price {
+  justify-content: space-between;
+  height: 99rpx;
+  line-height: 99rpx;
+}
+
+.price>.flex-row {
+  justify-content: space-between;
+  border-bottom: 1px #e6e6e6 solid;
+}
+
+.price>view:first-child {
+  color: #0d0d0d;
+  font-size: 27rpx;
+  font-weight: bold;
+}
+
+.price.flex-row {
+  margin-bottom: 20rpx;
+}
+
+.prime-price {
+  height: 99rpx;
+  line-height: 100rpx;
+  color: #999;
+  font-size: 24rpx;
+  text-decoration: line-through;
+  padding-right: 20rpx;
+}
+
+.current-price {
+  font-size: 27rpx;
+}
+
+.more {
+  height: auto;
+}
+
+/*footer  */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  box-shadow: 0 0 30rpx rgba(0, 0, 0, 0.05);
+  font-size: 30rpx;
+  letter-spacing: 1px;
+  background: #fff;
+}
+
+.footer .flex-row {
+  flex: 2.2;
+  padding-right: 41rpx;
+  justify-content: space-between;
+}
+
+.cancel {
+  padding-left: 30rpx;
+  color: #999;
+}
+
+.pay {
+  color: #f23f15;
+}
+
+.pay text {
+  font-weight: bold;
+}
+
+.confirm {
+  flex: 1;
+  height: 100rpx;
+  float: right;
+  line-height: 100rpx;
+  background: #2f57da;
+  font-size: 32rpx;
+  color: #fff;
+  border-radius: 0;
+}
+
+.panel-head {
+  justify-content: space-between;
+}
+
+/*pubic  */
+
+.font-color {
+  color: #f23f15;
+  font-size: 27rpx;
+  font-weight: bold;
+}
+
+.limit {
+  max-height: 480rpx;
+}
+
+.active {
+  height: auto;
+}

@@ -1,0 +1,53 @@
+<!--page/pay/index.wxml-->
+
+<view class='header flex-col'>
+  <view class='title'>{{title}}</view>
+</view>
+
+<view class='body flex-col flex-center'>
+  <view class='lesson-block {{active?"limit":"active"}}'>
+    <view class='flex-row' wx:for="{{list}}" wx:key='item'>
+      <text>{{item.title}}</text>
+      <text>￥{{item.price/100}}</text>
+    </view>
+  </view>
+
+  <view class='more' bindtap='active' wx:if='{{len>8}}'>
+    <text class='more-text'>{{fold?'点击收起':'展开更多'}}</text>
+    <text class='{{fold?" icon-yike icon-arrow-t":" icon-yike icon-arrow-b"}}'></text>
+  </view>
+  <view class='empty' bindtap='active' wx:if='{{len<=8}}'></view>
+</view>
+
+<view class='flex-col price'>
+  <view class='flex-row'>
+    <view>小计</view>
+    <view class='flex-row'>
+      <view class='prime-price'>￥{{order_total/100}}</view>
+      <view class='current-price'>￥{{order_amount/100}}</view>
+    </view>
+  </view>
+</view>
+<view class='flex-col price'>
+  <view class='flex-row'>
+    <view>优惠折扣</view>
+    <view class='flex-row'>
+      <view class='font-color'>{{deduct/100}}</view>
+    </view>
+  </view>
+</view>
+<view class='flex-row price'>
+  <view>余额抵扣</view>
+  <view class='flex-row'>
+    <view class='font-color'>{{charge/100}}</view>
+  </view>
+</view>
+<view class='footer flex-row'>
+  <view class='flex-row'>
+    <view class='cancel' bindtap='cancel'>取消</view>
+    <view class='pay'>应付:
+      <text>￥{{surplus/100}}.00</text>
+    </view>
+  </view>
+  <button class='confirm' bindtap='purchase'>确认支付</button>
+</view>

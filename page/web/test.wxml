@@ -1,0 +1,3 @@
+<!--page/web/test.wxml-->
+<text>page/web/test.wxml</text>
+<web-view src="https://student.sandbox.yike.fm"></web-view>
